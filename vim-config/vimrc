@@ -1,0 +1,33 @@
+syntax on
+
+set number
+set autoindent
+set ruler
+set incsearch
+set smartcase
+set mouse=a
+
+set ignorecase
+
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+set smartindent
+
+vnoremap < <gv
+vnoremap > >gv
+
+set nocompatible             " be iMproved, required
+filetype off                 " required
+ 
+set rtp+=/etc/vim/bundle/Vundle.vim
+call vundle#begin()
+ 
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'jiangmiao/auto-pairs.git'
+ 
+call vundle#end()            " required
+filetype plugin indent on    " required
+
